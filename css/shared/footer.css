@@ -1,0 +1,33 @@
+  .footer {
+    color: #fff;
+    background-color: #001833;
+    padding: 1%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: proxima-nova, sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .icon-container {
+    margin-top: 10px;
+  }
+
+  .icon {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  .icon:hover {
+    color: #84a9ac;
+  }
+
+  @media only screen and (max-width:800px) {
+    .icon {
+      font-size: 1.5rem;
+    }
+  }

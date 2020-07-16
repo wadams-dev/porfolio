@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+body {
+  background: #f0f0f0;
+}
+
+.heading {
+  text-align: center;
+  padding: 6%;
+  background: linear-gradient(rgba(132, 169, 172, 0.80), rgba(132, 169, 172, 0.80)), url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+}
+
+.heading h1 {
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+}
+
+.grid-section {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 5% 0;
+}
+
+.project {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.project figure img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 300px;
+}
+
+.project figcaption {
+  padding: 1em;
+  background: #3b6978;
+  color: #fff;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+@media only screen and (max-width:800px) {
+  .heading h1 {
+    font-size: 4em;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .grid-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .project {
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .project figure {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project figure img {
+    position: relative;
+    z-index: 999;
+    transition: transform 0.4s;
+  }
+
+  .project figure:hover img {
+    transform: translateY(-90px);
+  }
+
+  .project figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    height: 90px;
+    width: 100%;
+  }
+}
