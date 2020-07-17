@@ -26,6 +26,12 @@
     color: #84a9ac;
   }
 
+  #date {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+    margin: 2% 0;
+  }
+
   @media only screen and (max-width:800px) {
     .icon {
       font-size: 1.5rem;
